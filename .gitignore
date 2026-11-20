@@ -52,3 +52,6 @@ Makefile
 # Log files
 **/Log
 *.log
+
+# Include Premake
+!premake5.exe
