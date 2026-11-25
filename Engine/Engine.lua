@@ -21,7 +21,8 @@ project "Engine"
         "Source",
         "%{IncludeDir.GLFW}",
         "%{IncludeDir.Glad}",
-        "%{IncludeDir.glm}"
+        "%{IncludeDir.glm}",
+        "%{IncludeDir.stb_image}",
     }
 
     links

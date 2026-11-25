@@ -14,6 +14,7 @@ IncludeDir = {}
 IncludeDir["GLFW"] = "%{wks.location}/Engine/ThirdParty/GLFW/include"
 IncludeDir["Glad"] = "%{wks.location}/Engine/ThirdParty/Glad/include"
 IncludeDir["glm"] = "%{wks.location}/Engine/ThirdParty/glm/include"
+IncludeDir["stb_image"] = "%{wks.location}/Engine/ThirdParty/stb_image/include"
 
 group "Dependencies"
     include "Engine/ThirdParty/GLFW/GLFW.lua"
