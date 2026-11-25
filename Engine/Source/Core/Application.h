@@ -14,4 +14,6 @@ public:
 
 private:
 	inline static Application* sAppInstance = nullptr;
+
+	std::shared_ptr<Window> MainWindow;
 };

@@ -1,10 +1,12 @@
 #include "pch.h"
 #include "Application.h"
+#include "Window.h"
 #include "Utility/Time.h"
 
 
 Application::Application()
 {
+	MainWindow = nullptr;
 }
 
 void Application::Initialize()
@@ -14,6 +16,8 @@ void Application::Initialize()
 
 	Logger::Initialize();
 	Time::Initialize();
+
+	MainWindow = std::make_shared<Window>();
 }
 
 void Application::Shutdown()
@@ -30,5 +34,6 @@ void Application::Run()
 	while (true)
 	{
 		float deltaTime = Time::OnUpdate();
+		MainWindow->OnUpdate(deltaTime);
 	}
 }
