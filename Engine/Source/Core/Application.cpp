@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Application.h"
+#include "Utility/Time.h"
 
 
 Application::Application()
@@ -12,10 +13,12 @@ void Application::Initialize()
 	sAppInstance = this;
 
 	Logger::Initialize();
+	Time::Initialize();
 }
 
 void Application::Shutdown()
 {
+	Time::Shutdown();
 	Logger::Shutdown();
 
 	delete sAppInstance;
@@ -26,5 +29,6 @@ void Application::Run()
 {
 	while (true)
 	{
+		float deltaTime = Time::OnUpdate();
 	}
 }
