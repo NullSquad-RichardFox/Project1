@@ -18,3 +18,7 @@
 #include <unordered_map>
 
 #include "glm/glm.hpp"
+
+#include "Utility/Log.h"
+
+typedef unsigned int int32;

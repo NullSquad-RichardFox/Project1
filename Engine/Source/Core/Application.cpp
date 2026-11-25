@@ -10,10 +10,14 @@ void Application::Initialize()
 {
 	ASSERT(sAppInstance == nullptr);
 	sAppInstance = this;
+
+	Logger::Initialize();
 }
 
 void Application::Shutdown()
 {
+	Logger::Shutdown();
+
 	delete sAppInstance;
 	sAppInstance = nullptr;
 }
