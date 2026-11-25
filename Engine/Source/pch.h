@@ -21,4 +21,5 @@
 
 #include "Utility/Log.h"
 
-typedef unsigned int int32;
+typedef int32_t int32;
+typedef uint32_t uint32;

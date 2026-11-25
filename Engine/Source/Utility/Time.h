@@ -11,6 +11,8 @@ public:
 	inline static float GetDelatTime() { return sTimeInstance->DeltaTime; }
 
 private:
+	Time() = default;
+
 	float OnUpdate_Int();
 
 private:

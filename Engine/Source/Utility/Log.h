@@ -35,6 +35,8 @@ public:
 	}
 
 private:
+	Logger() = default;
+
 	void LogMessage_Int(ELogLevel level, const std::string& category, const std::string& fmessage);
 
 	inline static Logger* sLoggerInstance = nullptr;
