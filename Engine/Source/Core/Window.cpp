@@ -12,7 +12,7 @@ Window::Window()
 	WindowData.Height = 1080;
 	WindowData.bWindowShouldClose = false;
 	
-	glfwInit();
+	//GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 	WindowHandle = glfwCreateWindow(WindowData.Width, WindowData.Height, WindowData.Title.c_str(), nullptr, nullptr);
 	glfwMakeContextCurrent(WindowHandle);
 
